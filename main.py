@@ -9,11 +9,11 @@ from bokeh.models import ColumnDataSource
 from sklearn.linear_model import LinearRegression
 import random
 
+st.title('English Premier League interactive dashboard')
+
 def to_time(s):
     return datetime.strptime(s[2:], '%y-%m-%d %H:%M:%S')
 begining = to_time('2014-08-01 00:00:00')
-
-st.title('English Premier League interactive dashboard')
 
 st.write('This is a powerful tool for analyzing english football. Our goal was to give a ')
 st.write('numeric description for attacking and defensive power of every team in every moment ')
